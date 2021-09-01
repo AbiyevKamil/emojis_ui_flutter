@@ -89,26 +89,34 @@ class _HomePageState extends State<HomePage>
             padding: EdgeInsets.all(15.0),
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.grey.withOpacity(0.6),
-                borderRadius: BorderRadius.circular(12.0),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.1),
+                    blurRadius: 4.0,
+                    spreadRadius: 3.0,
+                    offset: Offset(0.5, 3.0),
+                  )
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(8.0),
               ),
               padding: EdgeInsets.symmetric(horizontal: 5.0),
               child: TextField(
                 cursorColor: Colors.grey.withOpacity(0.8),
                 style: TextStyle(
                   fontSize: 20.0,
-                  color: Colors.white,
+                  color: Colors.black.withOpacity(0.8),
                 ),
                 decoration: InputDecoration(
                   border: InputBorder.none,
                   hintText: "Search",
                   prefixIcon: Icon(
                     Icons.search,
-                    color: Colors.grey.withOpacity(0.8),
+                    color: Colors.black.withOpacity(0.8),
                   ),
                   hintStyle: TextStyle(
                     fontSize: 20.0,
-                    color: Colors.grey.withOpacity(0.8),
+                    color: Colors.black.withOpacity(0.8),
                   ),
                 ),
               ),
